@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>Hyder's Portfolio</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
                 <li class="navigation-item"> <a href="#about-me">About Me</a></li>
                 <li class="navigation-item"> <a href="#projects">Projects</a></li>
                 <li class="navigation-item"> <a href="#skills">Skills</a></li>
-                <li class="navigation-item"> <a href="/contact.html">Contact</a></li>
+                <li class="navigation-item"> <a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,8 +26,32 @@
                 <h1>Welcome!</h1>
             </div>
         </div>
+        <div class="body-container">
+            <div class="pacman-container">
+                <div class="pacman"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+                <div class="path"></div>
+            </div>
+        </div>
         <div class="banner-bottom">
-            <p>Make something interesting happen here</p>
+            <label for="message">Any Question for the Magic 8 Ball?</label>
+            <br>
+            <textarea
+            id="message"
+            name="message"
+            required
+            rows="2"
+            cols="45"placeholder="Write your question and click the button below..."
+            ></textarea>
+        <br />
+            <p id="random-message"></p>
+            <button id="random-button">Click Me</button>
         </div>
         <div class="main-container">
             <div class="content">
@@ -36,17 +61,15 @@
                             <h2>About Me</h2>
                             <p>
                                 Hi! My name is Hyder Khan and welcome to my project portfolio! 
-                                I am eager to show you all some of my work that I have completed 
-                                my first few weeks of learning web development but before that let 
+                                I am eager to show you all some of projects I worked on
+                                my first few weeks of learning coding but before that let 
                                 me share a bit more about myself. I have always been interested in 
                                 learn web development and have had opportunities in the past but 
                                 fate always took me the other way (maybe it was for this day to come).
                             </p> 
                             <p> 
                                 After graduating college with a BBA in Finance from Baruch College, I 
-                                joined a real estate start-up, WeWork. At WeWork, I adapted quickly and 
-                                gained the trust of many managers which allowed me to take on different 
-                                challenges on different teams. The four years there, I spent my time between 
+                                joined a real estate start-up, WeWork. The four years there, I spent my time between 
                                 the Supply Chain/Procurement and Cost Management team for multiple business 
                                 units. A year into COVID, I decided to move on and take on another challenge 
                                 which led me to a sustainable e-commerce start-up, Public Goods. I joined as 
@@ -76,165 +99,10 @@
                         </figure>
                     </div>
                 </section>
-                <section id="projects">
-                        <h2>Projects</h2>
-                        <p>The projects I have worked on from the beginning of my journey to present! </p>
-                        <div class="project-cards-container">
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-1.png" alt="Image of Hyder's First Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                HTML Introduction
-                                            </summary>
-                                            <p>Project Description: My first lines of HTML with a dancing ice cream cone giphy.</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/hyderskhan.github.io.git" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-2.png" alt="Image of Hyder's Second Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                HTML Table Cheatsheet
-                                            </summary>
-                                            <p>Project Description: A cheatsheet that can be referenced for when one is creating tables on HTML.</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io/html-cheatsheet/" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/html-cheatsheet.git" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-3.png" alt="Image of Hyder's Third Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                Dasmoto's Arts & Crafts
-                                            </summary>
-                                            <p>Project Description: Replicate website based on a screenshot of the final result.</p>
-                                            <p>Project Link:<a href="https://github.com/hyderskhan/Project_Dasmotos-Arts---Crafts" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://hyderskhan.github.io/Project_Dasmotos-Arts---Crafts/" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-4.png" alt="Image of Hyder's Fourth Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                Website Styleguide
-                                            </summary>
-                                            <p>Project Description: Styleguide created which contains color palette, font selections, text styles and buttons as a reference for when one is working on CSS portion of their project.</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io/Website-Styleguide/" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Website-Styleguide" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-5.png" alt="Image of Hyder's Fifth Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                Tea Cozy Homepage
-                                            </summary>
-                                            <p>Project Description: Create a company's website homepage based on a screenshot of the final result with responsive design.</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io/teacozyproject/" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/teacozyproject" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-6.png" alt="Image of Hyder's Sixth Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                Hydoo Capital
-                                            </summary>
-                                            <p>Project Description: Create a company's homepage with responsive design.</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io/Project_Hadoo-Capital/" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Project_Hadoo-Capital" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-7.png" alt="Image of Hyder's Seventh Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                Manchester United Fan Club
-                                            </summary>
-                                            <p>Project Description: Create a homepage for a club with responsive design.</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io/Project_Manchester-United-Fan-Club/" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Project_Manchester-United-Fan-Club" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-8.png" alt="Image of Hyder's Eighth Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                Interactive Piano Player
-                                            </summary>
-                                            <p>Project Description: An interactive game to help beginner-level piano students study.</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io/Project_Piano-Player/" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Project_Piano-Player" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-9.png" alt="Image of Hyder's Ninth Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                Form-A-Story
-                                            </summary>
-                                            <p>Project Description: A personalized story generator using user input.</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io/Lesson_Form-a-Story-/" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Lesson_Form-a-Story-" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="project-card">
-                                <figure>
-                                    <img src="resources/project-10.png" alt="Image of Hyder's Tenth Project">
-                                    <figcaption>
-                                        <details>
-                                            <summary>
-                                                Number Guesser Game
-                                            </summary>
-                                            <p>Project Description: Guess a number and compete with a computer! Try to get as close to the target to win!</p>
-                                            <p>Project Link:<a href="https://hyderskhan.github.io/Project_Number-Guesser/" target="_blank">here</a></p>
-                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Project_Number-Guesser" target="_blank">here</a></p>
-                                        </details>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                </section>
                 <section id="skills">
                     <h2>Skills</h2>
                     <p>Over the first few weeks of my coding journey, 
-                        I have been able to learn the following skills below
+                        I have been able to learn the following skills
                         and plan on learning many more!
                     </p>
                     <div class="skills-cards-container">
@@ -320,13 +188,169 @@
                         </div>
                     </div>
                 </section>
+                <section id="projects">
+                        <h2>Projects</h2>
+                        <p>Click on the arrow on the cards to find more information!</p>
+                        <div class="project-cards-container">
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-1.png" alt="Image of Hyder's First Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                HTML Introduction
+                                            </summary>
+                                            <p>Project Description: My first lines of HTML with a dancing ice cream cone giphy.</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/hyderskhan.github.io.git" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-2.png" alt="Image of Hyder's Second Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                HTML Table Cheatsheet
+                                            </summary>
+                                            <p>Project Description: A cheatsheet that can be referenced for when one is creating tables on HTML.</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io/html-cheatsheet/" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/html-cheatsheet.git" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-3.png" alt="Image of Hyder's Third Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                Dasmoto's Arts & Crafts
+                                            </summary>
+                                            <p>Project Description: Replicate website based on a screenshot of the final result.</p>
+                                            <p>Project Link:<a href="https://github.com/hyderskhan/Project_Dasmotos-Arts---Crafts" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://hyderskhan.github.io/Project_Dasmotos-Arts---Crafts/" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-4.png" alt="Image of Hyder's Fourth Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                Website Styleguide
+                                            </summary>
+                                            <p>Project Description: Styleguide created which contains color palette, font selections, text styles and buttons as a reference for when one is working on CSS portion of their project.</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io/Website-Styleguide/" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Website-Styleguide" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-5.png" alt="Image of Hyder's Fifth Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                  Tea Cozy Homepage
+                                            </summary>
+                                            <p>Project Description: Create a company's website homepage based on a screenshot of the final result with responsive design.</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io/teacozyproject/" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/teacozyproject" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-6.png" alt="Image of Hyder's Sixth Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                Hydoo Capital
+                                            </summary>
+                                            <p>Project Description: Create a company's homepage with responsive design.</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io/Project_Hadoo-Capital/" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Project_Hadoo-Capital" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-7.png" alt="Image of Hyder's Seventh Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                Manchester United Fan Club
+                                            </summary>
+                                            <p>Project Description: Create a homepage for a club with responsive design.</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io/Project_Manchester-United-Fan-Club/" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Project_Manchester-United-Fan-Club" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-8.png" alt="Image of Hyder's Eighth Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                Interactive Piano Player
+                                            </summary>
+                                            <p>Project Description: An interactive game to help beginner-level piano students study.</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io/Project_Piano-Player/" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Project_Piano-Player" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-9.png" alt="Image of Hyder's Ninth Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                Form-A-Story
+                                            </summary>
+                                            <p>Project Description: A personalized story generator using user input.</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io/Lesson_Form-a-Story-/" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Lesson_Form-a-Story-" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="project-card">
+                                <figure>
+                                    <img src="resources/project-10.png" alt="Image of Hyder's Tenth Project">
+                                    <figcaption>
+                                        <details>
+                                            <summary>
+                                                Number Guesser Game
+                                            </summary>
+                                            <p>Project Description: Guess a number and compete with a computer! Try to get as close to the target to win!</p>
+                                            <p>Project Link:<a href="https://hyderskhan.github.io/Project_Number-Guesser/" target="_blank"> here</a></p>
+                                            <p>GitHub Repository:<a href="https://github.com/hyderskhan/Project_Number-Guesser" target="_blank"> here</a></p>
+                                        </details>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                </section>
+                
             </div>
         </div>
     </main>
     <footer>
-        <p>Thanks for Visiting!</p>
-        <p>If you have any questions, do not hesitate to <a href="">contact me!</a></p>
-        <p>&copy; Hyder Khan 2022</p>
+        <p></p>
+        <h3>Thanks for Visiting!</h3>
+
         <nav>
             <ul class="navigation-items">
                 <li class="navigation-item"> <a href="#about-me">About Me</a></li>
@@ -335,8 +359,9 @@
                 <li class="navigation-item"> <a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
+        <p>&copy; Hyder Khan 2022</p>
     </footer>
-    <script src="/main.js" type="text/javascript">
+    <script src="main.js" type="text/javascript">
     </script>
 </body>
 </html>
