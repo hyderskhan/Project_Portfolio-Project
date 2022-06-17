@@ -45,7 +45,7 @@ header {
 }
   
 .navigation-items {
-    font-weight: bolder;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -167,7 +167,7 @@ p {
   }
 
   label {
-    font-weight: bolder;
+    font-weight: bold;
     color:black;
     font-size: 20px;
 }
@@ -335,7 +335,7 @@ footer .navigation-items {
 }
 
 footer .navigation-item {
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
     display: inline-block;
     font-weight: bold;
@@ -404,7 +404,7 @@ nav {
 
     
 label {
-    font-weight: bolder;
+    font-weight: bold;
     color:black;
     font-size: 20px;
 }
