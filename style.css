@@ -54,6 +54,7 @@ header {
     justify-content: flex-end;
     line-height: 2.5em;
     font-size: 1em;
+    width: max-content;
 }
   
 a {
